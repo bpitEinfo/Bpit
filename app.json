@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "name": "Bpit",
+    "slug": "Bpit",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
