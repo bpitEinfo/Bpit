@@ -8,7 +8,6 @@ import {firebase} from './config' ;
 import Profile from './src/Profile';
 
 const Stack = createNativeStackNavigator();
-
 function App() {
 
   /*const [initializing,setInitializing] = useState(true);
@@ -31,10 +30,11 @@ function App() {
         <Stack.Screen name="Home" component={Home} />
         <Stack.Screen name="Signup" component={Signup} />
         <Stack.Screen name="Login" component={Login} />
-        <Stack.Screen name="Profile" component={Profile} />
+        
       </Stack.Navigator>
     </NavigationContainer>
   );
+  //<Stack.Screen name="Profile" component={Profile} />
   }
 }
 
