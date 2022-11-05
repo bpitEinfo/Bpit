@@ -23,7 +23,7 @@ const Login = (props) => {
 backgroundColor:'#ffebcd',
             height: 800,
             width: 460,
-            borderTopLeftRadius: 130,
+          //  borderTopLeftRadius: 130,
             paddingTop: 200,
             paddingRight:100,
             alignItems: 'center',
@@ -46,13 +46,13 @@ backgroundColor:'#ffebcd',
           />
           <Field placeholder="Password" secureTextEntry={true} />
           <View
-            style={{alignItems: 'flex-end', width: '78%', paddingRight: 16, marginBottom: 200}}>
-            <Text style={{color: '#0F78D8', fontWeight: 'bold', fontSize: 16}}>
+            style={{alignItems: 'center', width: '78%', marginBottom: 80}}>
+            <Text style={{color: '#0F78D8', fontWeight: 'bold', fontSize: 16,}}>
               Forgot Password ?
             </Text>
           </View>
           <Btn textColor='white' bgColor='#0F78D8' btnLabel="Login" Press={() => props.navigation.navigate("Profile")} />
-          <View style={{ display: 'flex', flexDirection :'row', justifyContent: "center" }}>
+          <View style={{ display: 'flex', flexDirection :'row', justifyContent: "center", marginTop:14}}>
             <Text style={{ fontSize: 16, fontWeight:"bold" }}>Don't have an account ? </Text>
             <TouchableOpacity onPress={() => props.navigation.navigate("Signup")}>
             <Text style={{ color: '#0F78D8', fontWeight: 'bold', fontSize: 16 }}>Signup</Text>

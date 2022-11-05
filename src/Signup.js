@@ -49,10 +49,9 @@ const Signup = props => {
             
             alignItems: 'center',
           }}>
-          <Field placeholder="First Name" />
-          <Field placeholder="Last Name" />
+          
           <Field
-            placeholder="Email / Username"
+            placeholder="E-mail"
             keyboardType={'email-address'}
           />
           <Field placeholder="Contact Number" keyboardType={'number'} />
@@ -67,33 +66,19 @@ const Signup = props => {
              paddingLeft:25,
              paddingRight:25,
             }}>
-            <Text style={{color: 'grey', fontSize: 14}}>
-              By signing in, you agree to our{' '}
-            </Text>
-            <Text style={{color: 'black', fontWeight: 'bold', fontSize: 14}}>
-              Terms & Conditions
+        
+            <Text style={{lineHeight: 21, fontSize: 15, marginBottom: 15, textAlign:'center'}}>
+              <Text>By signing in, you agree to our</Text>
+              <Text style={{color: 'teal',fontWeight: 'bold'}}> Terms & Conditions</Text>
+              <Text> and </Text>
+              <Text style={{color: 'teal', fontWeight: 'bold'}}>Privacy Policy</Text>           
             </Text>
           
           </View>
 
-          <View
-            style={{
-              display: 'flex',
-              flexDirection: 'row',
-              justifyContent :"center",
-              width: '78%',
-              paddingRight: 16,
-              marginBottom: 10
-            }}>
-            <Text style={{color: 'grey', fontSize: 14}}>
-              and {" "}
-            </Text>
-            <Text style={{color: 'black', fontWeight: 'bold', fontSize: 14}}>
-              Privacy Policy
-            </Text>
-          </View>
+         
           
-          <Btn style={{height:15}}
+          <Btn style={{height:20}}
             textColor="white"
             bgColor='blue'
             btnLabel="Signup"
@@ -108,6 +93,7 @@ const Signup = props => {
               display: 'flex',
               flexDirection: 'row',
               justifyContent: 'center',
+              marginTop: 10
              // padding:50
             }}>
             <Text style={{fontSize: 16, fontWeight: 'bold'}}>
