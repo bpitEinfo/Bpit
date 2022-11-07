@@ -1,13 +1,13 @@
 import React  from "react";
 //import { nativeViewGestureHandlerProps } from "react-native-gesture-handler/lib/typescript/handlers/NativeViewGestureHandler";
-import {View,Text,SafeAreaView,StyleSheet} from 'react-native';
+import {View,Text,SafeAreaView,StyleSheet } from 'react-native';
 import {
     Image,
     TouchableOpacity
   } from 'react-native';
 import Btn from './Btn';
 import Field from "./Field";
-import { Form, FormItem } from 'react-native-form-component';
+import {Form,FormItem} from 'react-native-form-component';
 
 
 const Profile = () => {
