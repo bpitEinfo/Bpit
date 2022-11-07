@@ -84,7 +84,7 @@ const Signup = props => {
             btnLabel="Signup"
             
             Press={() => {
-              alert('Accoutn created');
+              alert('Account created');
               props.navigation.navigate('Login');
             }}
           />
