@@ -13,8 +13,8 @@ import {Form,FormItem} from 'react-native-form-component';
 const Profile = () => {
     return (
        <View style={{flex:1, justifyContent:'center', alignItems:'center', backgroundColor:'#ffebcd'}}>
-         <View style={{marginTop:63, marginBottom:-72}}>
-         <Image style={{width: 100, height: 100, borderRadius:100}}  // required Dimensions and styling of Image
+         <View style={{marginTop:5, marginBottom:-50}}>
+         <Image style={{width: 110, height: 110, borderRadius:100}}  // required Dimensions and styling of Image
             source={require('../assets/logo_Bpit.png')} // enter your avatar image path 
             />
          </View>

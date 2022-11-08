@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Text, Touchable, TouchableOpacity} from 'react-native';
+import {View, Text, Touchable,Image, TouchableOpacity} from 'react-native';
 import Background from './Background';
 import Btn from './Btn';
 import {darkGreen} from './Constants';
@@ -24,10 +24,16 @@ backgroundColor:'#ffebcd',
             height: 800,
             width: 460,
           //  borderTopLeftRadius: 130,
-            paddingTop: 200,
+            paddingTop: 90,
             paddingRight:100,
             alignItems: 'center',
           }}>
+
+<View style={{marginTop:0, marginBottom:-100,paddingBottom:100}}>
+         <Image style={{width: 110, height: 110, borderRadius:100}}  // required Dimensions and styling of Image
+            source={require('../assets/logo_Bpit.png')} // enter your avatar image path 
+            />
+         </View>
           <Text style={{fontSize: 40, color: '#0F78D8', fontWeight: 'bold'}}>
             Welcome!
           </Text>

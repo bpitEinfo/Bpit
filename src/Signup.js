@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Text, Touchable, TouchableOpacity} from 'react-native';
+import {View, Text, Touchable,Image, TouchableOpacity} from 'react-native';
 import { Button } from 'react-native-web';
 //import Background from './Background';
 import Btn from './Btn';
@@ -45,11 +45,15 @@ const Signup = props => {
             paddingLeft:300,
             paddingRight:40,
             
-            paddingTop: 100,
+            paddingTop: 80,
             
             alignItems: 'center',
           }}>
-          
+          <View style={{marginTop:0, marginBottom:25}}>
+         <Image style={{width: 110, height: 110, borderRadius:100}}  // required Dimensions and styling of Image
+            source={require('../assets/logo_Bpit.png')} // enter your avatar image path 
+            />
+         </View>
           <Field
             placeholder="E-mail"
             keyboardType={'email-address'}
