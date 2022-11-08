@@ -9,7 +9,7 @@ const Home = (props) => {
    
     <View style={{flex:1, justifyContent:'center', alignItems:'center', backgroundColor:'#ffebcd'}}>
     <View style={{marginTop:5, marginBottom:-50}}>
-    <Image style={{width: 250, height: 200, borderRadius:30,marginBottom:80}}  // required Dimensions and styling of Image
+    <Image style={{width: 200, height: 200, borderRadius:30,marginBottom:80}}  // required Dimensions and styling of Image
        source={require('../assets/logo_Bpit.png')} // enter your avatar image path 
        />
     </View>
