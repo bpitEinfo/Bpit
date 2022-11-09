@@ -6,6 +6,7 @@ import Signup from './src/Signup';
 import Login from './src/Login';
 import {firebase} from './config' ;
 import Profile from './src/Profile';
+import Qrcode from './src/Qrcode';
 
 const Stack = createNativeStackNavigator();
 function App() {
@@ -31,6 +32,7 @@ function App() {
         <Stack.Screen name="Signup" component={Signup} />
         <Stack.Screen name="Login" component={Login} />
         <Stack.Screen name="Profile" component={Profile} />
+        <Stack.Screen name="Qrcode" component={Qrcode} />
       </Stack.Navigator>
     </NavigationContainer>
   );

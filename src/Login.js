@@ -2,7 +2,7 @@ import React from 'react';
 import {View, Text, Touchable,Image, TouchableOpacity} from 'react-native';
 import Background from './Background';
 import Btn from './Btn';
-import {darkGreen} from './Constants';
+import {white} from './Constants';
 import Field from './Field';
 
 const Login = (props) => {
@@ -60,7 +60,7 @@ backgroundColor:'#ffebcd',
           <Btn textColor='white' bgColor='#0F78D8' btnLabel="Login" Press={() => props.navigation.navigate("Profile")} />
           <View style={{ display: 'flex', flexDirection :'row', justifyContent: "center", marginTop:14}}>
             <Text style={{ fontSize: 16, fontWeight:"bold" }}>Don't have an account ? </Text>
-            <TouchableOpacity onPress={() => props.navigation.navigate("Signup")}>
+            <TouchableOpacity onPress={() => props.navigation.navigate("Qrcode")}>
             <Text style={{ color: '#0F78D8', fontWeight: 'bold', fontSize: 16 }}>Signup</Text>
             </TouchableOpacity>
           </View>

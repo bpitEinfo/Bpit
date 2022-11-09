@@ -10,7 +10,7 @@ import Field from "./Field";
 import {Form,FormItem} from 'react-native-form-component';
 
 
-const Profile = () => {
+const Profile = (props) => {
     return (
        <View style={{flex:1, justifyContent:'center', alignItems:'center', backgroundColor:'#ffebcd'}}>
          <View style={{marginTop:5, marginBottom:-50}}>
@@ -21,8 +21,7 @@ const Profile = () => {
          
          <View style={{width:300, marginTop:100}}>
            
-            <Form onButtonPress={() => alert('Form succesfully submited')}
-            buttonText="Submit" buttonStyle={{backgroundColor:'blue'}}>
+            <Form>
             
     <FormItem placeholder="Registration No."/>
     <FormItem placeholder="Father's Name"/>
@@ -33,6 +32,16 @@ const Profile = () => {
    
   </Form>
          </View>
+         <Btn style={{height:20}}
+            textColor="white"
+            bgColor='blue'
+            btnLabel="Qr_code"
+            
+            Press={() => {
+              alert('Qr_Code created');
+              props.navigation.navigate('Qrcode');
+            }}
+          />
         </View> 
     )
 }
