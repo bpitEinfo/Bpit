@@ -289,6 +289,8 @@ android {
 }
 
 dependencies {
+    implementation 'me.dm7.barcodesscanner:zxing:1.9.13'
+    implementation 'com.karumi:dexter:6.2.2'
     implementation fileTree(dir: "libs", include: ["*.jar"])
 
     //noinspection GradleDynamicVersion
